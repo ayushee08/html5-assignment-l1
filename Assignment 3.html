@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>TrendNxt Assignment 3</title>
+		<style>
+			header{
+				background-color:#40ff00;
+			}
+			header img{
+				width:20px;
+				height:20px;
+			}
+			video{
+				margin-left:27%;
+				
+
+			}
+			section{
+				background-color:grey;
+			}
+			#m2{
+				float:right;
+			}
+		</style>
+	</head>
+	<body style="background-image:url("img4.jpg")">
+		<header>
+			<h1 style="text-align:center;">Awesome Online Videos <img src="img3.png" alt="logo"/></h1>
+			
+		</header>
+		<section>
+			<video width="600" height="400" id="vid1">
+				<source src="video1.mp4" type="video/mp4">
+				browser does not support video tag
+			</video><br/>
+		<div class="con">
+			<button type="button" onclick="playPause()" id="m1">Play</button>
+			<button type="button" onclick="playPause()" id="m2">Pause</button>
+			<script>
+				var v1=document.getElementById("vid1");
+				function playPause(){
+					if(v1.paused)
+						v1.play();
+					else
+						v1.pause();
+				}
+			</script>
+		</div>
+	<section>
+	</body>
+</html>
